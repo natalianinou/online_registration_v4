@@ -167,8 +167,8 @@ label,
     margin-top: auto;
 }
 
-#zip {
-    width: 40%;
+.flex-zip {
+    width: 50%;
 }
 
 .flex-zip input {
@@ -186,23 +186,32 @@ label,
     }
 
 
+
+
     .contact,
     .flex-zip {
         flex-direction: row;
         display: flex;
         justify-content: space-between;
         padding-top: 30px;
+        flex-basis: 10%;
 
     }
 
     .contact input,
-    select {
+    select,
+    .flex-zip input {
         flex-basis: 70%;
+
     }
 
-    .flex-zip {
+    .flex-zip input {
+
+        max-width: 40%;
         justify-content: flex-start;
     }
+
+
 
 
 }
