@@ -26,12 +26,12 @@
           <legend>Contact Information</legend>
             <div class="contact">
                 <label for="name">Full Name</label>
-                <input required type="text" type="text" id="name" name="user_name" placeholder="Required">
+                <input type="text" id="name" name="user_name" placeholder="Required">
             </div>
         
             <div class="contact">
                 <label for="mail">Email Address</label>
-                <input required type="text" type="email" id="mail" name="user_email" placeholder="Required">
+                <input type="email" id="mail" name="user_email" placeholder="Required">
             </div>
 
             <div class="contact">
@@ -40,18 +40,18 @@
             </div>
 
             <div class="contact">   
-                <label class="address">Street address</label>
-                <input class="address" id="street_number" name="user_address">
+                <label for="street_number">Street address</label>
+                <input type="text" id="street_number" name="user_address">
             </div>
 
             <div class="contact">
-                <label class="city">City</label>
-                <input class="city" id="city" name="name_city">
+                <label for="city">City</label>
+                <input type="text" id="city" name="name_city">
             </div>
              
         <!--States-->
             <div class="contact">
-                <label class="state">State</label>
+                <label for="state">State</label>
                 <select id="state" name="user_state">
                     <optgroup label="Northeast">
                         <option value="" disabled selected hidden>Select State</option>
@@ -125,7 +125,7 @@
        <!--ZIP CODE-->
         <div class="flex-zip">
             <label for="zip">ZIP Code</label>
-            <input id="zip" name="zip" type="text" placeholder="5 digits"inputmode="numeric" pattern="\d{5}-?(\d{4})?">
+            <input id="zip" name="zip" type="text" placeholder="5 digits" inputmode="numeric" pattern="\d{5}-?(\d{4})?">
         </div>
     </fieldset> 
         </div>
@@ -165,18 +165,22 @@
                 <input type="radio" id="plain" value="plain_text" name="user_html"><label class="light" for="plain">Plain text</label><br>
                 </div>
             </div>
-
+        </div>
             
-            <div class="topics">
-                <label for="topics">Other topics you'd like to hear about</label>
-                <textarea id="topics" name="user_topics">
+
+            <div class="flex-box">
+                <label class="flex1" for="bio">Other topics you would like to hear about?</label>
+            </div>
+
+            <div>
+                <textarea id="bio" name="user_bio">
+
                 </textarea>
             </div>
-            </div>
-        
+        </form>
 
             <button type="submit">Sign Up</button>
-            </form>
+           
 
         </div>
             <footer class="main-footer">
